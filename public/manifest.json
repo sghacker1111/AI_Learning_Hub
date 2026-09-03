@@ -1,0 +1,19 @@
+{
+  "name": "AI Learning Nepal Prototype",
+  "short_name": "AI Nepal",
+  "description": "Educational platform prototype with a small Class 8 sample, tutoring, practice, and a basic offline fallback.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#DC2626",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"]
+}

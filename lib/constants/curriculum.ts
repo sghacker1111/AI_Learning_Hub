@@ -1,0 +1,283 @@
+export interface GradeInfo {
+  id: string;
+  name: string;
+  nameNepali: string;
+  level: "basic" | "secondary";
+  levelLabel: string;
+  ageRange: string;
+  description: string;
+  iconName: string;
+  color: string;
+  subjectsCount: number;
+}
+
+export const CDC_GRADES: GradeInfo[] = [
+  {
+    id: "nursery",
+    name: "Nursery",
+    nameNepali: "नर्सरी",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "3-4 yrs",
+    description: "Visual exploration, alphabet sounds, basic numbers and rhymes.",
+    iconName: "Baby",
+    color: "from-pink-500/20 to-rose-500/20 text-rose-600 border-rose-200 dark:border-rose-900/50",
+    subjectsCount: 3,
+  },
+  {
+    id: "lkg",
+    name: "LKG",
+    nameNepali: "एल.के.जी.",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "4-5 yrs",
+    description: "Picture recognition, early phonics, simple counting and colors.",
+    iconName: "Sparkles",
+    color: "from-purple-500/20 to-indigo-500/20 text-purple-600 border-purple-200 dark:border-purple-900/50",
+    subjectsCount: 3,
+  },
+  {
+    id: "ukg",
+    name: "UKG",
+    nameNepali: "यु.के.जी.",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "5-6 yrs",
+    description: "Sentence beginnings, basic arithmetic, environmental awareness.",
+    iconName: "Smile",
+    color: "from-amber-500/20 to-orange-500/20 text-amber-600 border-amber-200 dark:border-amber-900/50",
+    subjectsCount: 4,
+  },
+  {
+    id: "class-1",
+    name: "Class 1",
+    nameNepali: "कक्षा १",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "6-7 yrs",
+    description: "CDC Integrated Curriculum: Hamro Serophero, Nepali, English, Math.",
+    iconName: "BookOpen",
+    color: "from-emerald-500/20 to-teal-500/20 text-emerald-600 border-emerald-200 dark:border-emerald-900/50",
+    subjectsCount: 4,
+  },
+  {
+    id: "class-2",
+    name: "Class 2",
+    nameNepali: "कक्षा २",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "7-8 yrs",
+    description: "Reading comprehension, addition/subtraction, nature and society.",
+    iconName: "BookOpen",
+    color: "from-emerald-500/20 to-teal-500/20 text-emerald-600 border-emerald-200 dark:border-emerald-900/50",
+    subjectsCount: 4,
+  },
+  {
+    id: "class-3",
+    name: "Class 3",
+    nameNepali: "कक्षा ३",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "8-9 yrs",
+    description: "Foundational multiplication, grammar, environmental science.",
+    iconName: "BookOpen",
+    color: "from-emerald-500/20 to-teal-500/20 text-emerald-600 border-emerald-200 dark:border-emerald-900/50",
+    subjectsCount: 4,
+  },
+  {
+    id: "class-4",
+    name: "Class 4",
+    nameNepali: "कक्षा ४",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "9-10 yrs",
+    description: "Structured science topics, social studies, fractions, creative writing.",
+    iconName: "Compass",
+    color: "from-blue-500/20 to-cyan-500/20 text-blue-600 border-blue-200 dark:border-blue-900/50",
+    subjectsCount: 5,
+  },
+  {
+    id: "class-5",
+    name: "Class 5",
+    nameNepali: "कक्षा ५",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "10-11 yrs",
+    description: "Advanced primary curriculum, geometry basics, Nepali Byakaran.",
+    iconName: "Compass",
+    color: "from-blue-500/20 to-cyan-500/20 text-blue-600 border-blue-200 dark:border-blue-900/50",
+    subjectsCount: 5,
+  },
+  {
+    id: "class-6",
+    name: "Class 6",
+    nameNepali: "कक्षा ६",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "11-12 yrs",
+    description: "Algebra intro, physics & chemistry fundamentals, civic education.",
+    iconName: "Layers",
+    color: "from-indigo-500/20 to-blue-500/20 text-indigo-600 border-indigo-200 dark:border-indigo-900/50",
+    subjectsCount: 6,
+  },
+  {
+    id: "class-7",
+    name: "Class 7",
+    nameNepali: "कक्षा ७",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "12-13 yrs",
+    description: "Equations, life processes, Nepali literature, occupation & technology.",
+    iconName: "Layers",
+    color: "from-indigo-500/20 to-blue-500/20 text-indigo-600 border-indigo-200 dark:border-indigo-900/50",
+    subjectsCount: 6,
+  },
+  {
+    id: "class-8",
+    name: "Class 8",
+    nameNepali: "कक्षा ८",
+    level: "basic",
+    levelLabel: "Basic Level",
+    ageRange: "13-14 yrs",
+    description: "BLE Board examination prep, sets, force & motion, organic science.",
+    iconName: "Award",
+    color: "from-violet-500/20 to-purple-500/20 text-violet-600 border-violet-200 dark:border-violet-900/50",
+    subjectsCount: 6,
+  },
+  {
+    id: "class-9",
+    name: "Class 9",
+    nameNepali: "कक्षा ९",
+    level: "secondary",
+    levelLabel: "Secondary Level",
+    ageRange: "14-15 yrs",
+    description: "Comprehensive secondary curriculum, Opt. Math, Accountancy, Computer.",
+    iconName: "GraduationCap",
+    color: "from-amber-500/20 to-yellow-500/20 text-amber-600 border-amber-200 dark:border-amber-900/50",
+    subjectsCount: 7,
+  },
+  {
+    id: "class-10",
+    name: "Class 10",
+    nameNepali: "कक्षा १०",
+    level: "secondary",
+    levelLabel: "Secondary Level",
+    ageRange: "15-16 yrs",
+    description: "SEE Board exam mastery, specification grid practice, past papers.",
+    iconName: "Flame",
+    color: "from-red-500/20 to-rose-500/20 text-red-600 border-red-200 dark:border-red-900/50",
+    subjectsCount: 7,
+  },
+  {
+    id: "class-11",
+    name: "Class 11",
+    nameNepali: "कक्षा ११",
+    level: "secondary",
+    levelLabel: "Secondary Level",
+    ageRange: "16-17 yrs",
+    description: "NEB Streamlined: Science (Physics, Chemistry, Bio/Math), Management, Humanities.",
+    iconName: "TrendingUp",
+    color: "from-sky-500/20 to-blue-500/20 text-sky-600 border-sky-200 dark:border-sky-900/50",
+    subjectsCount: 6,
+  },
+  {
+    id: "class-12",
+    name: "Class 12",
+    nameNepali: "कक्षा १२",
+    level: "secondary",
+    levelLabel: "Secondary Level",
+    ageRange: "17-18 yrs",
+    description: "NEB Board Examination excellence, calculus, modern physics, university prep.",
+    iconName: "Trophy",
+    color: "from-emerald-500/20 to-cyan-500/20 text-emerald-600 border-emerald-200 dark:border-emerald-900/50",
+    subjectsCount: 6,
+  },
+];
+
+export const LEVEL_TABS = [
+  { id: "all", label: "All Classes" },
+  { id: "basic", label: "Basic Level (Nursery - Class 8)" },
+  { id: "secondary", label: "Secondary Level (Class 9 - 12)" },
+] as const;
+
+export interface SubjectMock {
+  id: string;
+  name: string;
+  nameNepali: string;
+  code: string;
+  gradeId: string;
+  unitsCount: number;
+  chaptersCount: number;
+  masteryPercentage: number;
+  icon: string;
+  color: string;
+  description: string;
+}
+
+export const MOCK_STUDENT_SUBJECTS: SubjectMock[] = [
+  {
+    id: "c8-math",
+    name: "Compulsory Mathematics",
+    nameNepali: "अनिवार्य गणित",
+    code: "MTH-801",
+    gradeId: "class-8",
+    unitsCount: 6,
+    chaptersCount: 18,
+    masteryPercentage: 82,
+    icon: "Calculator",
+    color: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/40",
+    description: "Sets, Arithmetic, Mensuration, Algebra, Geometry, Statistics",
+  },
+  {
+    id: "c8-sci",
+    name: "Science & Technology",
+    nameNepali: "विज्ञान तथा प्रविधि",
+    code: "SCI-802",
+    gradeId: "class-8",
+    unitsCount: 5,
+    chaptersCount: 16,
+    masteryPercentage: 74,
+    icon: "Atom",
+    color: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-900/40",
+    description: "Force & Motion, Matter, Living Beings, Earth & Space, IT",
+  },
+  {
+    id: "c8-eng",
+    name: "English",
+    nameNepali: "अंग्रेजी",
+    code: "ENG-803",
+    gradeId: "class-8",
+    unitsCount: 12,
+    chaptersCount: 24,
+    masteryPercentage: 88,
+    icon: "Languages",
+    color: "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-900/40",
+    description: "Reading Comprehension, Writing, Grammar, Speaking Skills",
+  },
+  {
+    id: "c8-nep",
+    name: "Nepali",
+    nameNepali: "नेपाली",
+    code: "NEP-804",
+    gradeId: "class-8",
+    unitsCount: 10,
+    chaptersCount: 20,
+    masteryPercentage: 91,
+    icon: "BookMarked",
+    color: "bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-200 dark:border-rose-900/40",
+    description: "साहित्य (कविता, कथा), व्याकरण र रचना कौशल",
+  },
+  {
+    id: "c8-soc",
+    name: "Social Studies & Human Values",
+    nameNepali: "सामाजिक अध्ययन तथा मानव मूल्य",
+    code: "SOC-805",
+    gradeId: "class-8",
+    unitsCount: 8,
+    chaptersCount: 22,
+    masteryPercentage: 68,
+    icon: "Globe",
+    color: "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-200 dark:border-amber-900/40",
+    description: "Our Society, Civic Sense, Nepal History & Geography, Global Issues",
+  },
+];

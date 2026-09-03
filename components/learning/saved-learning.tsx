@@ -1,0 +1,11 @@
+"use client";
+import * as React from "react";
+import Link from "next/link";
+import { masteryBand } from "@/lib/lessons/contracts";
+type Mastery = { id: string; chapter: string; topic: string; score: number; attempts: number; hints: number; correct: number; partial: number; incorrect: number };
+type Lesson = { id: string; grade: string; subjectKey: string; chapterId: string; chapter: string; topic: string; status: string; updatedAt: string };
+export function SavedLearning({ role }: { role: "student" | "teacher" }) {
+  const [data, setData] = React.useState<{ mastery: Mastery[]; lessons: Lesson[] } | null>(null), [error, setError] = React.useState("");
+  React.useEffect(() => { fetch("/api/lessons").then(async (response) => { const result = await response.json(); if (!response.ok) throw new Error(result.error); setData(result); }).catch((error) => setError(error.message)); }, []);
+  return <section className="space-y-4 rounded-2xl border bg-background p-5"><h2 className="text-xl font-bold">Saved lessons & assessed understanding</h2><p className="text-sm text-muted-foreground">AI estimates come only from validated answers in approved-content mode. They are not official school grades.</p>{error && <p className="text-sm text-amber-700">{error}</p>}<div className="grid gap-3 md:grid-cols-2">{data?.mastery.map((item) => <div key={item.id} className="rounded-xl border p-4"><h3 className="font-semibold">{item.topic || item.chapter}</h3><p className="mt-2">{item.score}/100 · {masteryBand(item.score)}</p><p className="mt-2 text-xs text-muted-foreground">{item.attempts} attempts · {item.correct} correct · {item.partial} partial · {item.incorrect} incorrect · {item.hints} hints</p></div>)}</div>{data && !data.mastery.length && <p className="text-sm">No assessed answers yet.</p>}<div className="space-y-2">{data?.lessons.slice(0, 12).map((item) => <Link key={item.id} href={`/${role}/guru-ai?grade=${encodeURIComponent(item.grade)}&subject=${encodeURIComponent(item.subjectKey)}&chapter=${encodeURIComponent(item.chapterId)}&topic=${encodeURIComponent(item.topic)}`} className="flex items-center justify-between gap-3 rounded-xl border p-3 text-sm"><span>{item.grade} · {item.chapter}{item.topic ? ` · ${item.topic}` : ""}</span><span>{item.status} · {new Date(item.updatedAt).toLocaleDateString()}</span></Link>)}</div></section>;
+}

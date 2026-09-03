@@ -1,0 +1,118 @@
+import { ChildProfile, ParentNotificationSettings } from "./types";
+
+export const MOCK_CHILDREN_PROFILES: ChildProfile[] = [
+  {
+    id: "child-aarav",
+    name: "Aarav Sharma",
+    nameNepali: "आरभ शर्मा",
+    grade: "Class 8 (BLE Candidate)",
+    schoolName: "Shree Shanti Secondary School, Kathmandu",
+    overallMasteryPercentage: 88,
+    weeklyStudyHours: 4.5,
+    currentStreakDays: 5,
+    estimatedGpa: 3.65,
+    recentExamScore: "44 / 50 Marks (88% - Grade A)",
+    masteredTopicsThisWeek: [
+      "13% Value Added Tax (VAT) Calculation",
+      "Overlapping Sets Cardinality & Venn Diagrams",
+      "Liquid Pressure at Depth (P = h·d·g)",
+    ],
+    focusAreasNeedingSupport: [
+      "Archimedes' Buoyant Upthrust Word Problems",
+      "Quadratic Trinomial Factorization",
+    ],
+    recentActivities: [
+      {
+        id: "act-1",
+        timestamp: "Today, 4:15 PM",
+        type: "PRACTICE",
+        title: "Adaptive Practice: 13% VAT & Discount",
+        subject: "Compulsory Mathematics",
+        scoreOrDuration: "5/5 Correct (100%)",
+        status: "MASTERED",
+      },
+      {
+        id: "act-2",
+        timestamp: "Today, 3:45 PM",
+        type: "TUTOR",
+        title: "Socratic Dialogue on Liquid Pressure Factors",
+        subject: "Science & Technology",
+        scoreOrDuration: "14 Mins Dialogue",
+        status: "COMPLETED",
+      },
+      {
+        id: "act-3",
+        timestamp: "Yesterday",
+        type: "EXAM",
+        title: "Class 8 BLE Mathematics Model Exam 1",
+        subject: "Compulsory Mathematics",
+        scoreOrDuration: "44/50 Marks (GPA 3.65)",
+        status: "COMPLETED",
+      },
+      {
+        id: "act-4",
+        timestamp: "2 days ago",
+        type: "STEM_LAB",
+        title: "Simulated Fluid Eureka Can Displaced Volume",
+        subject: "Science & Technology",
+        scoreOrDuration: "10 Mins Experiment",
+        status: "COMPLETED",
+      },
+    ],
+  },
+  {
+    id: "child-ananya",
+    name: "Ananya Sharma",
+    nameNepali: "अनन्या शर्मा",
+    grade: "Class 4",
+    schoolName: "Shree Shanti Secondary School, Kathmandu",
+    overallMasteryPercentage: 94,
+    weeklyStudyHours: 3.2,
+    currentStreakDays: 7,
+    estimatedGpa: 3.9,
+    recentExamScore: "24 / 25 Marks (96% - Grade A+)",
+    masteredTopicsThisWeek: [
+      "Multiplication of 3-Digit Numbers",
+      "Solar System Planets & Earth",
+      "Basic Fractions & Shapes",
+    ],
+    focusAreasNeedingSupport: [
+      "Time Word Problems (Hours & Minutes)",
+    ],
+    recentActivities: [
+      {
+        id: "act-5",
+        timestamp: "Today, 5:00 PM",
+        type: "PRACTICE",
+        title: "Math Shapes & Perimeter Drill",
+        subject: "Mathematics",
+        scoreOrDuration: "10/10 Correct",
+        status: "MASTERED",
+      },
+      {
+        id: "act-6",
+        timestamp: "Yesterday",
+        type: "TUTOR",
+        title: "Why does the Moon change shape?",
+        subject: "Science",
+        scoreOrDuration: "10 Mins Dialogue",
+        status: "COMPLETED",
+      },
+    ],
+  },
+];
+
+export const MOCK_PARENT_SETTINGS: ParentNotificationSettings = {
+  parentId: "parent-demo-1",
+  parentPhoneNumber: "+977-9841234567",
+  parentEmail: "parent.sharma@gmail.com",
+  channels: {
+    whatsapp: true,
+    sms: true,
+    email: true,
+  },
+  frequency: "WEEKLY_SUNDAY",
+  dailyStudyLimitMinutes: 45,
+  bedtimeLockEnabled: true,
+  bedtimeLockHour: "21:30",
+};

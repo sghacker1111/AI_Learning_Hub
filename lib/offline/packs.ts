@@ -1,0 +1,67 @@
+import { OfflineContentPack } from "./types";
+
+export const CDC_OFFLINE_PACKS: OfflineContentPack[] = [
+  {
+    id: "pack-mth8-sets-vat",
+    title: "Class 8 Math: Sets Cardinality & 13% VAT Pack",
+    titleNepali: "कक्षा ८ गणित: समूह गणना र १३% भ्याट अफलाइन प्याक",
+    grade: "Class 8",
+    subject: "Compulsory Mathematics",
+    chapter: "Sets & 13% VAT",
+    approxSizeBytes: 1250000,
+    approxSizeFormatted: "1.2 MB",
+    totalQuestionsCount: 35,
+    totalTheoryCardsCount: 8,
+    hasInteractiveSimulations: true,
+    isDownloaded: true,
+    downloadedAt: "2081-05-02 14:30",
+  },
+  {
+    id: "pack-sci8-force-pressure",
+    title: "Class 8 Science: Fluid Pressure & Archimedes Lab Pack",
+    titleNepali: "कक्षा ८ विज्ञान: तरल चाप र आर्किमिडिज सिद्धान्त प्याक",
+    grade: "Class 8",
+    subject: "Science & Technology",
+    chapter: "Force & Pressure",
+    approxSizeBytes: 1680000,
+    approxSizeFormatted: "1.6 MB",
+    totalQuestionsCount: 40,
+    totalTheoryCardsCount: 10,
+    hasInteractiveSimulations: true,
+    isDownloaded: true,
+    downloadedAt: "2081-05-03 09:15",
+  },
+  {
+    id: "pack-mth8-algebra",
+    title: "Class 8 Math: Quadratic Factorization & Algebra Pack",
+    titleNepali: "कक्षा ८ गणित: मध्य पद विभाजन र खण्डीकरण प्याक",
+    grade: "Class 8",
+    subject: "Compulsory Mathematics",
+    chapter: "Algebra (Factorization)",
+    approxSizeBytes: 950000,
+    approxSizeFormatted: "950 KB",
+    totalQuestionsCount: 25,
+    totalTheoryCardsCount: 6,
+    hasInteractiveSimulations: false,
+    isDownloaded: false,
+  },
+  {
+    id: "pack-ble-mock1",
+    title: "Class 8 BLE Full Model Examination 1 (50 Marks)",
+    titleNepali: "कक्षा ८ BLE पूर्ण नमुना परीक्षा १ (५० पूर्णाङ्क)",
+    grade: "Class 8",
+    subject: "Compulsory Mathematics",
+    chapter: "BLE Board Assessment",
+    approxSizeBytes: 850000,
+    approxSizeFormatted: "850 KB",
+    totalQuestionsCount: 20,
+    totalTheoryCardsCount: 4,
+    hasInteractiveSimulations: false,
+    isDownloaded: true,
+    downloadedAt: "2081-05-04 11:00",
+  },
+];
+
+export function getOfflinePacks(): OfflineContentPack[] {
+  return CDC_OFFLINE_PACKS;
+}

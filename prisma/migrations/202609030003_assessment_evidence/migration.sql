@@ -1,0 +1,2 @@
+ALTER TABLE "GuruTurn" ADD COLUMN "questionKey" TEXT;
+ALTER TABLE "GuruTurn" ADD COLUMN "awardedDelta" INTEGER NOT NULL DEFAULT 0;

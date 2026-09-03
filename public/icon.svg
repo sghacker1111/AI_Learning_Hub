@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI Learning Nepal">
+  <rect width="64" height="64" rx="14" fill="#b91c1c"/>
+  <path d="M14 18h15c5 0 9 4 9 9v24c-2-4-6-6-11-6H14V18Z" fill="#fff"/>
+  <path d="M50 18H35c-5 0-9 4-9 9v24c2-4 6-6 11-6h13V18Z" fill="#fee2e2"/>
+  <path d="M32 21v28" stroke="#b91c1c" stroke-width="3" stroke-linecap="round"/>
+</svg>
